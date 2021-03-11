@@ -1,0 +1,29 @@
+<div class="p-grid p-justify-center card">
+    <div class="p-col-12">
+      <p-card>
+        <div class="p-grid">
+          <div class="p-col-12 text-center">
+            <i class="fas fa-car fa-4x" style="color: #007ad9;"></i>
+            <h2>Login </h2>
+          </div>
+          <div class="p-col-12">
+            <label for="">Usuário:</label>
+            <input class="p-col-12" type="text" pInputText [(ngModel)]="login.username"/>
+          </div>
+          <div class="p-col-12">
+            <label for="">Senha:</label>
+            <input class="p-col-12" type="password" pInputText [(ngModel)]="login.password"/>
+          </div>
+          <div class="p-col-12">
+            <button (click)="doLogin()"
+              pButton
+              type="button"
+              label="Entrar"
+              class="p-col-12"
+            ></button>
+          </div>
+        </div>
+      </p-card>
+    </div>
+  </div>
+  
